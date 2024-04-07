@@ -1,30 +1,38 @@
-# React + TypeScript + Vite
+# Dot Drawing App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple React application that allows users to draw dots on the screen by clicking on it. Users can also undo and redo their actions.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Click on the screen to draw dots at the clicked position.
+- Undo: Remove the last drawn dot.
+- Redo: Restore the last removed dot.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React
+- TypeScript
+- Tailwind CSS
 
-- Configure the top-level `parserOptions` property like this:
+## Getting Started
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+To run this project locally, follow these steps:
+
+1. Clone the repository:
+```
+git clone https://github.com/your-username/dot-drawing-app.git
+```
+2. Navigate to the project directory:
+```
+cd dot-drawing-app
+```
+3. Install dependencies:
+```
+npm install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Usage
+1. Click anywhere on the screen to draw a dot.
+2. Use the "Undo" button to remove the last drawn dot.
+3. Use the "Redo" button to restore the last removed dot.
+
